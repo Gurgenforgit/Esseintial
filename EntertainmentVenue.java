@@ -7,7 +7,8 @@ public class EntertainmentVenue {
         int age = sc.nextInt();
         if (age < 16) {
             System.out.println("The entry of the costumer is banned");
-            System.exit(0);}
+            System.exit(0);
+        }
             System.out.println("Is the costumer VIP? ");
             System.out.println("Type true or false");
             boolean VIP = sc.nextBoolean();
@@ -18,7 +19,8 @@ public class EntertainmentVenue {
             if (VIP) {
                 FinalPay = (PriceForOrder - 15 * PriceForOrder / 100);
                 System.out.println("The costumer has to pay " + FinalPay);
-            System.exit(0);}
+            System.exit(0);
+            }
                 FinalPay = PriceForOrder + 5000;
                 System.out.println("The costumer has to pay " + FinalPay);
             }
