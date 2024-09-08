@@ -4,9 +4,11 @@ public class PrintTheUpperCaseOfInputedLowerCase {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a lowercase: ");
         char LowerCase = sc.next().charAt(0);
-        int UpperCase = LowerCase-32;
-        System.out.println("Uppercase is of your input lowercase is " + (char)UpperCase);
-
-        sc.close();
+        int UpperCase = LowerCase - 32;
+        if (LowerCase < 97 || LowerCase > 122) {
+            System.out.println("There is not such lowercase in Latin alphabet ");
+            System.exit(1);}
+            System.out.println(" The uppercase  of your input lowercase is " + (char) UpperCase);
+            sc.close();
+        }
     }
-}
