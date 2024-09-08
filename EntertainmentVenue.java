@@ -7,26 +7,24 @@ public class EntertainmentVenue {
         int age = sc.nextInt();
         if (age < 16) {
             System.out.println("The entry of the costumer is banned");
-            System.exit(0);
-        } else {
+            System.exit(0);}
             System.out.println("Is the costumer VIP? ");
             System.out.println("Type true or false");
             boolean VIP = sc.nextBoolean();
-            System.out.println("Enter the amount of payment");
-            double AmountForOrder;
-            double TotalPay;
-            AmountForOrder = sc.nextDouble();
+            System.out.println("Enter payment");
+            double PriceForOrder;
+            double FinalPay;
+            PriceForOrder = sc.nextDouble();
             if (VIP) {
-                TotalPay = (AmountForOrder - 15 * AmountForOrder / 100);
-                System.out.println("The costumer has to pay " + TotalPay);
-            } else {
-                TotalPay = AmountForOrder + 5000;
-                System.out.println("The costumer has to pay " + TotalPay);
+                FinalPay = (PriceForOrder - 15 * PriceForOrder / 100);
+                System.out.println("The costumer has to pay " + FinalPay);
+            System.exit(0);}
+                FinalPay = PriceForOrder + 5000;
+                System.out.println("The costumer has to pay " + FinalPay);
             }
-
-        }
-    }
 }
+
+
 
 
 
