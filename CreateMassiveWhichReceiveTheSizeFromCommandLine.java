@@ -8,8 +8,15 @@ public class CreateMassiveWhichReceiveTheSizeFromCommandLine {
         if (n < 1) {
             System.exit(1);
         }
-        int arr[] = new int[n];
+        int arr[] ;
         switch (n) {
+            default:
+                arr = new int[15];
+                arr[0] = 15;
+                break;
+            case 6, 7:
+                arr = new int[10];
+                break;
             case 3:
                 arr = new int[3];
                 break;
@@ -18,18 +25,8 @@ public class CreateMassiveWhichReceiveTheSizeFromCommandLine {
                 break;
             case 5:
                 arr = new int[5];
-                break;
-            case 6:
-                arr = new int[10];
-                break;
-            case 7:
-                arr = new int[10];
-                break;
-            default:
-                arr = new int[15];
-                arr[0] = 15;
-                System.out.println("The first element of array is " + arr[0]);
         }
+                System.out.println("The first element of array is " + arr[0]);
         System.out.println("The length of the array is " + arr.length);
     }
 }
