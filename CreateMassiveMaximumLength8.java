@@ -10,13 +10,22 @@ public class CreateMassiveMaximumLength8 {
             System.exit(1);
         }
         int Massive[] = new int[n];
-        System.out.println("Input two whole numbers ");
+        System.out.println("Input two different whole numbers ");
         int a = sc.nextInt();
         int b = sc.nextInt();
-        Massive[(n / 2 - 1)] = a;
-        Massive[(n / 2 + 1)] = b;
+        if (a == b) {
+            System.out.println(" The program terminated due to wrong input");
+            System.exit(1);
+        }
+        if (a < b) {
+            Massive[(n / 2 - 1)] = a;
+            Massive[(n / 2 + 1)] = b;
+        } else {
+            Massive[(n / 2 - 1)] = b;
+            Massive[(n / 2 + 1)] = a;
+        }
         System.out.println("The length of the array is " + Massive.length);//optional
-        System.out.println("The element-" + (n / 2 - 1) + " " + "is " + a);//optional
-        System.out.println("The element-" + (n / 2 + 1) + " " + "is " + b);//optional
+        System.out.println("The element-" + (n / 2 - 1) + " " + "is " + Massive[(n / 2 - 1)]);//optional
+        System.out.println("The element-" + (n / 2 + 1) + " " + "is " + Massive[(n / 2 + 1)]);//optional
     }
 }
