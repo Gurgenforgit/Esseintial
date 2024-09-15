@@ -14,7 +14,7 @@ public class CheckIfInputNumberIsCubeOfANumber {
                 }
             }
             if (i * i * i > input)
-                System.out.println("There is not exist such whole number");
+                System.out.println("This  is not a cube of any number");
         }
         if (input < 0) {
             int i = -1;
