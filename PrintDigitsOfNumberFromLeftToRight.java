@@ -7,9 +7,11 @@ public class PrintDigitsOfNumberFromLeftToRight {
         int a = sc.nextInt();
 
         // Preventing input not positive number
-        if (a <= 0){
+        for(;a < 0;){
+       // if (a <= 0){
             System.out.println(" Next time please input a Positive whole number");
-            System.exit(1);
+            System.out.println( "Input any positive whole number");
+             a = sc.nextInt();
         }
 
         int b = a; // to keep input number for further operations
