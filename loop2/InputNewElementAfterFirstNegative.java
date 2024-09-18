@@ -1,5 +1,5 @@
 package loop2;
-
+//Զանգվածի առաջին բացասական թվից հետո պետքա insert անեք նոր թիվ՝ տվյալ բացասական էլեմենտի ինդեքսը
 public class InputNewElementAfterFirstNegative {
     public static void main(String[] args) {
 
