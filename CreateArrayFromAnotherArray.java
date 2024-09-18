@@ -18,16 +18,16 @@ public class CreateArrayFromAnotherArray {
             System.exit(1);
         }
             // define the bigger
-            int c;
-            int d;
+            int min;
+            int max;
             if(a < b)
-                c = a;
-            else c = b;
+                min = a;
+            else min = b;
             if(a > b)
-                d =a;
-            else d = b;
+                max = a;
+            else max = b;
             // assigning elements to the second array
-            int[] second = new int[(d-c) + 1];
+            int[] second = new int[(max - min) + 1];
             for(int k = 0; k < second.length ; k++){
                 second[k] = original[a];
                 a = a+1;
