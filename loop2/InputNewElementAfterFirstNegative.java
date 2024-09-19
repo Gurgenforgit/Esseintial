@@ -7,14 +7,14 @@ public class InputNewElementAfterFirstNegative {
         double[] origin = {1, 0.3, 4, -6, 45, -98, 10};
 
         // Counting quantity of negative elements
-        int x = 0;
+        int neg = 0;
         for (double value : origin) {
             if (value < 0)
-                x++;
+                neg++;
         }
 
         // Declaring temporary array which length is origin.length + quantity of negative elements
-        double [] temp = new double[origin.length + x];
+        double [] temp = new double[origin.length + neg];
 
         // Adding required elements to temporary array
         int a = 0;
@@ -29,7 +29,7 @@ public class InputNewElementAfterFirstNegative {
         }
         origin = temp;
 
-        // This is optional, to be sure target is met.
+        // This is optional, to be sure the target is met.
         for (double v : origin) System.out.println(v);
         System.out.println("The length of origin array is " + origin.length);
     }
