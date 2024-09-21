@@ -11,7 +11,7 @@ public class SumOfDiagonals {
         // Calculate first Diagonal - from top left corner to the right bottom  corner
         int DiagonalSum1 = 0;
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < 4; j++) {
+            for (int j = 0; j < matrix.length; j++) {
                 if (i == j)
                     DiagonalSum1 = DiagonalSum1 + matrix[i][j];
             }
@@ -19,8 +19,8 @@ public class SumOfDiagonals {
         // Calculating second Diagonal - from top right corner to the left bottom corner
         int DiagonalSum2 = 0;
         for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < 4; j++) {
-                if((i + j) == 3)
+            for (int j = 0; j < matrix.length; j++) {
+                if((i + j) == (matrix.length - 1))
                  DiagonalSum2 = DiagonalSum2 + matrix[i][j];
             }
         }
