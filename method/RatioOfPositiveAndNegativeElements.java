@@ -8,9 +8,9 @@ package method;
 
 public class RatioOfPositiveAndNegativeElements {
     public static void main(String[] args) {
-         int[] arr = {1, 2, -9, 15, -7, 89, -9, 58, 0};
 
-                 // This is optional, in case if I didn't get the condition properly.
+        // This fragment of code is optional, in case if I didn't get the condition properly.
+
        /* Scanner sc = new Scanner(System.in);
         System.out.println("Enter the length of desired array ");
         int length = sc.nextInt();
@@ -19,7 +19,7 @@ public class RatioOfPositiveAndNegativeElements {
             System.out.println("Input next element ");
             arr[i] = sc.nextInt();
         }*/
-
+        int[] arr = {1, 2, -9, 15, -7, 89, -9, 58, 0};
         double result = ratio(arr);
         System.out.println(result);
     }
