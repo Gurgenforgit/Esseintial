@@ -16,12 +16,11 @@ public class CalculateWordsInString {
         int k = 0;
         while (str.charAt(k) == 32) {
             k++;
-            if (str.charAt(k) != 32)
-                break;
         }
 
         boolean Space = false;
         for (int i = k; i < str.length(); i++) {
+
             // This condition is checking whether there are or more than one 'space' in between
             if (Space && str.charAt(i) == 32)
                 continue;
