@@ -13,8 +13,10 @@ public class CheckIfTheNumerIsIncludedInArray {
     static boolean checkIfIncluded(int[] arr, int n) {
         boolean Included = false;
         for (int i = 0; i < arr.length; i++) {
-            if (n == arr[i])
+            if (n == arr[i]) {
                 Included = true;
+                break;
+            }
         }
         return Included;
     }
