@@ -14,18 +14,18 @@ public class CalculateWordsInString {
 
         // This fragment of code checking if there is 'space' in the beginning of the string
         int k = 0;
-        while (str.charAt(k) == 32) {
+        while (str.charAt(k) == ' ') {
             k++;
         }
 
         boolean Space = false;
         for (int i = k; i < str.length(); i++) {
 
-            // This condition is checking whether there are or more than one 'space' in between
-            if (Space && str.charAt(i) == 32)
+            // This condition is checking whether there are  more than one 'space' in between
+            if (Space && str.charAt(i) == ' ')
                 continue;
 
-            if (str.charAt(i) == 32) {
+            if (str.charAt(i) == ' ') {
                 quantity += 1;
                 Space = true;
             } else Space = false;
