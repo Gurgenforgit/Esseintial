@@ -11,7 +11,8 @@ public class CalculateIncomeTaxes {
         }
         System.out.println("The default tax is " + calculateIncomeTax(sallary));
         System.out.println("The custom tax is " + calculateIncomeTax(sallary, custumTax));
-        System.out.println("If in IT, the tax is " + calculateIncomeTax(sallary, flag));
+        System.out.println(" The tax is " + calculateIncomeTax(sallary, flag));
+
     }
 
     static double calculateIncomeTax(double sallary) {
@@ -24,6 +25,9 @@ public class CalculateIncomeTaxes {
     }
 
     static double calculateIncomeTax(double sallary, boolean flag) {
-        return (sallary * 10) / 100;
+        if (flag == true) {
+            return (sallary * 10) / 100;
+        }
+        else return (sallary * 20) / 100;
     }
 }
